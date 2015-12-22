@@ -1,0 +1,26 @@
+
+
+using UnityEngine;
+using System.Collections;
+using UnityEngine.UI;
+
+public class LevelManager : MonoBehaviour {
+
+
+	public void LoadLevel(string name){
+		Debug.Log("Level Load Requested" + name);
+		Application.LoadLevel (name);
+	}
+
+	public void QuitLevel (){
+
+		Debug.Log("I quit");
+		Application.Quit ();
+
+	}
+
+
+
+
+
+}
